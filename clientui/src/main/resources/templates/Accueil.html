@@ -9,15 +9,27 @@
 <body>
     <div class="container">
         <h1>Catalogue de film</h1>
+        <h2>Film Marvel :</h2>
         <div class="row">
-            <div th:each="film : ${listeFilms}" class="col-md-4 my-1">
-                <a th:href="@{|/detail-film/${film.id}|}" >
-                    <img th:src="${film.lienImage}"  class="card-img-top" />
-                    <p th:text= "${film.titre}"></p>
+            <div th:each="filmMarvel : ${listeMarvel}" class="col-md-4 my-1">
+                <a th:href="@{|/detail-filmCenturyFox/${filmMarvel.id}|}" >
+                    <img th:src="${filmMarvel.lienImage}"  class="card-img-top" />
+                    <p th:text= "${filmMarvel.titre}"></p>
                 </a>
             </div>
         </div>
+        <h2>Film CenturyFox : </h2>
+        <div class="row">
+            <div th:each="filmCenturyFox : ${listeCenturyFox}" class="col-md-4 my-1">
+                <a th:href="@{|/detail-filmCenturyFox/${filmCenturyFox.id}|}" >
+                    <img th:src="${filmCenturyFox.lienImage}"  class="card-img-top" />
+                    <p th:text= "${filmCenturyFox.titre}"></p>
+                </a>
+            </div>
+        </div>
+
     </div>
+
 
     <script type="text/javascript" src="webjars/bootstrap/4.0.0-2/js/bootstrap.min.js"></script>
 </body>

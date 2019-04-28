@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name="apiMarvel", url = "localhost:9090")
-public interface FilmProxy {
+@FeignClient(name="apiCenturyFox", url = "localhost:6969")
+public interface CenturyFoxProxy {
     @GetMapping(value = "Films")
     List<FilmBean> listeFilms();
 
