@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 29, 2019 at 01:38 AM
+-- Generation Time: Apr 29, 2019 at 01:39 AM
 -- Server version: 5.7.11
 -- PHP Version: 5.6.18
 
@@ -17,16 +17,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `cataloguefilmmarvel`
+-- Database: `cataloguecenturyfox`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `film`
+-- Table structure for table `film_century_fox`
 --
 
-CREATE TABLE `film` (
+CREATE TABLE `film_century_fox` (
   `id` int(11) NOT NULL,
   `date_sortie` datetime NOT NULL,
   `description` varchar(255) DEFAULT NULL,
@@ -36,22 +36,22 @@ CREATE TABLE `film` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `film`
+-- Dumping data for table `film_century_fox`
 --
 
-INSERT INTO `film` (`id`, `date_sortie`, `description`, `lien_image`, `prix_visionnement`, `titre`) VALUES
-(4, '2019-04-22 00:00:00', 'La fin des héros', 'http://t1.gstatic.com/images?q=tbn:ANd9GcSzYzZ8fnuDOmDN2dmhVFHoPwTZozfcjtlvsf3zdjzfgduLR0jy', 11.5, 'Avengers : Endgame'),
-(5, '2017-11-03 00:00:00', 'La fin d\'Asgard', 'http://www.movienewsletters.net/photos/256906R1.jpg', 10.5, 'Thor Ragnarok'),
-(6, '2016-04-18 00:00:00', 'Civil war', 'http://cdn.collider.com/wp-content/uploads/2016/03/captain-america-civil-war-cap-poster.jpg', 7, 'Civil war');
+INSERT INTO `film_century_fox` (`id`, `date_sortie`, `description`, `lien_image`, `prix_visionnement`, `titre`) VALUES
+(1, '2016-04-09 00:00:00', 'Film de deadpool 2', 'https://i.pinimg.com/originals/2a/83/7b/2a837b32e324ce1c90e9c7142984e2b7.jpg', 11.5, 'DeadPool 2'),
+(2, '2016-04-09 00:00:00', 'Film de deadpool', 'https://images-na.ssl-images-amazon.com/images/I/91qmrdkBViL._SY606_.jpg', 9, 'DeadPool'),
+(3, '2016-04-09 00:00:00', 'Film Logan', 'https://images-na.ssl-images-amazon.com/images/I/51Qkwjbm3IL.jpg', 12, 'Logan');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `film`
+-- Indexes for table `film_century_fox`
 --
-ALTER TABLE `film`
+ALTER TABLE `film_century_fox`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -59,10 +59,10 @@ ALTER TABLE `film`
 --
 
 --
--- AUTO_INCREMENT for table `film`
+-- AUTO_INCREMENT for table `film_century_fox`
 --
-ALTER TABLE `film`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+ALTER TABLE `film_century_fox`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

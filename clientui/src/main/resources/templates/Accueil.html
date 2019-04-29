@@ -5,26 +5,53 @@
     <meta charset="UTF-8">
     <title>Films</title>
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css"  href="../css.css"/>
 </head>
 <body>
     <div class="container">
-        <h1>Catalogue de film</h1>
-        <h2>Film Marvel :</h2>
-        <div class="row">
-            <div th:each="filmMarvel : ${listeMarvel}" class="col-md-4 my-1">
-                <a th:href="@{|/detail-filmCenturyFox/${filmMarvel.id}|}" >
-                    <img th:src="${filmMarvel.lienImage}"  class="card-img-top" />
-                    <p th:text= "${filmMarvel.titre}"></p>
-                </a>
+        <div class="row" style="margin-bottom:-2em;">
+            <div class="col-lg-6">
+                <img src="../images/logofilm.png" id="logo">
+            </div>
+            <div class="col-lg-6">
+                <button type="button" class="btn btn-success" id="btnAjouter">Ajouter</button>
             </div>
         </div>
-        <h2>Film CenturyFox : </h2>
+        <hr />
+        <h2>Films Marvel :</h2>
         <div class="row">
-            <div th:each="filmCenturyFox : ${listeCenturyFox}" class="col-md-4 my-1">
-                <a th:href="@{|/detail-filmCenturyFox/${filmCenturyFox.id}|}" >
-                    <img th:src="${filmCenturyFox.lienImage}"  class="card-img-top" />
-                    <p th:text= "${filmCenturyFox.titre}"></p>
-                </a>
+            <div th:each="filmMarvel : ${listeMarvel}" class="col-md-4">
+                <div class="col-lg-12 film">
+                    <div class="col-lg-12">
+                        <a th:href="@{|/detail-filmMarvel/${filmMarvel.id}|}" >
+                            <p th:text= "${filmMarvel.titre}"></p>
+                            <img th:src="${filmMarvel.lienImage}"  class="card-img-top poster" />
+                        </a>
+                    </div>
+                    <div class="col-lg-12 zoneBtn">
+                        <button type="button" class="btn btn-primary btn">Modifier</button>
+                        <button type="button" class="btn btn-danger btn">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <hr />
+        <h2>Films CenturyFox : </h2>
+        <div class="row">
+            <div th:each="filmCenturyFox : ${listeCenturyFox}" class="col-md-4">
+                <div class="col-lg-12 film">
+                    <div class="col-lg-12">
+                        <a th:href="@{|/detail-filmCenturyFox/${filmCenturyFox.id}|}" >
+                            <p th:text= "${filmCenturyFox.titre}"></p>
+                            <img th:src="${filmCenturyFox.lienImage}"  class="card-img-top poster" />
+                        </a>
+                    </div>
+                    <div class="col-lg-12 zoneBtn">
+                        <button type="button" class="btn btn-primary btn">Modifier</button>
+                        <button type="button" class="btn btn-danger btn">Supprimer</button>
+                    </div>
+                </div>
             </div>
         </div>
 
