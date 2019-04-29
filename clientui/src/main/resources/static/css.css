@@ -1,6 +1,5 @@
 body{
     background-color: #eaebed;
-    /*background-color: red;*/
 }
 
 /* IDs */
@@ -11,13 +10,21 @@ body{
     float: right;
     margin-top: 4em;
 }
+#ajoutFilm{
+    background-color:white;
+    padding:1em;
+    border-radius: 5px;
+    box-shadow: 4px 6px 5px -4px rgba(0,0,0,0.75);
+    margin-bottom:1em; display: none;
+}
 /* Classes */
 .poster{
-    width: 17em;
+    max-width: 17em;
+    max-height: 25em;
     transition:0.4s;
 }
 .poster:hover{
-    width: 17.5em;
+    max-width: 17.5em;
     opacity: 0.6;
     margin-bottom: -0.75em;
 }
@@ -32,6 +39,9 @@ body{
 }
 .zoneBtn{
     margin-top:2em;
+}
+.btnZoneAdd{
+    margin-top:0.5em;
 }
 .btn{
     width: 8em;

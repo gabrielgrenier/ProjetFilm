@@ -6,8 +6,9 @@
     <title>Films</title>
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css"  href="../css.css"/>
+    <!--<link rel="stylesheet" type="text/css"  href="./css/style.css"/>-->
 </head>
-<body style="background-color:#eaebed;">
+<body>
     <div class="container">
         <div class="row" style="margin-top:5em;">
             <div class="col-lg-6">
@@ -19,7 +20,7 @@
         </div>
         <hr />
         <form>
-            <div style="background-color:white; padding:1em; border-radius: 5px; box-shadow: 4px 6px 5px -4px rgba(0,0,0,0.75); margin-bottom:1em; display: none;" id="ajoutFilm">
+            <div id="ajoutFilm">
                 <h2>Ajout de film</h2>
 
                 <div class="form-group">
@@ -45,10 +46,10 @@
                             <input type="text" class="form-control" id="descriptionAdd" placeholder="Description">
                             <br />
                             <label for="prixAdd">Prix par visionnement : </label>
-                            <input type="text" class="form-control" id="prixAdd" placeholder="Description">
+                            <input type="text" class="form-control" id="prixAdd" placeholder="Prix">
                             <br /> <br />
-                            <input type="submit" class="btn btn-primary" value="Enregistrer" style="margin-top:0.5em;">
-                            <button type="button" class="btn btn-danger btn" style="margin-top:0.5em;" onclick="cacherAjout()">Annuler</button>
+                            <input type="submit" class="btn btn-primary btnZoneAdd" value="Enregistrer">
+                            <button type="button" class="btn btn-danger btnZoneAdd" onclick="cacherAjout()">Annuler</button>
                         </div>
                     </div>
                 </div>
