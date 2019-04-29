@@ -54,6 +54,25 @@
                 </div>
             </div>
         </div>
+        <br />
+        <hr />
+        <h2>Films Paramount Picture : </h2>
+        <div class="row">
+            <div th:each="filmParamount : ${listeParamount}" class="col-md-4">
+                <div class="col-lg-12 film">
+                    <div class="col-lg-12">
+                        <a th:href="@{|/detail-filmParamount/${filmParamount.id}|}" >
+                            <p th:text= "${filmParamount.titre}"></p>
+                            <img th:src="${filmParamount.lienImage}"  class="card-img-top poster" />
+                        </a>
+                    </div>
+                    <div class="col-lg-12 zoneBtn">
+                        <button type="button" class="btn btn-primary btn">Modifier</button>
+                        <button type="button" class="btn btn-danger btn">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
