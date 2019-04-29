@@ -53,7 +53,7 @@ public class ClientController {
         FilmBean film = centuryFoxProxy.afficherUnFilm(filmId);
         // Ajouter le film
         model.addAttribute("film",film);
-        model.addAttribute("film","Century Fox");
+        model.addAttribute("producer","Century Fox");
 
         //Ramene la page d'accueil
         return "AffichageFilm";
@@ -78,6 +78,18 @@ public class ClientController {
         // Ajouter le film
         model.addAttribute("film",film);
         model.addAttribute("producer","Paramount Pictures");
+
+        //Ramene la page d'accueil
+        return "AffichageFilm";
+    }
+
+    @GetMapping(value = "/detail-filmSony/{id}")
+    public String afficherFilmSony(Model model,@PathVariable(value = "id")  int filmId){
+        // Aller chercher le film
+        FilmBean film = sonyProxy.afficherUnFilm(filmId);
+        // Ajouter le film
+        model.addAttribute("film",film);
+        model.addAttribute("producer","Sony");
 
         //Ramene la page d'accueil
         return "AffichageFilm";
