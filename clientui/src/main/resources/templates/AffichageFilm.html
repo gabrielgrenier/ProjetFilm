@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Films</title>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css"  href="../css.css"/>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Section de gauche pour les informations du film -->
+        <div class="row">
+            <div class="col-lg-8 film">
+                <h2 th:text= "${film.titre}"></h2>
+                <br />
+                <p>Date de sortie: </p>
+                <p th:text= "${film.dateSortie}"></p>
+                <br />
+                <p>Description: </p>
+                <p th:text="${film.description}"></p>
+                <p>Prix: </p>
+                <p th:text= "${film.prixVisionnement}"></p>
+            </div>
+        </div>
+
+        <!-- Section de droite pour la photo -->
+        <div class="row">
+            <div class="col-lg-4 film">
+                    <img th:src="${film.lienImage}"  class="card-img-top poster" />
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="webjars/bootstrap/4.0.0-2/js/bootstrap.min.js"></script>
+</body>
+</html>

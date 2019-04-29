@@ -20,7 +20,7 @@ public class FilmController {
     @Autowired
     private FilmDao filmDao;
 
-    //Retourne tous les films de paramount picture
+    // Retourne tous les films de paramount picture
     @ApiOperation(value = "Retourne tous les films")
     @GetMapping(value = "/films")
     public List<Film> listeFilms(){
@@ -29,7 +29,7 @@ public class FilmController {
         return films;
     }
 
-    //Retourne un film
+    // Retourne un film
     @ApiOperation(value = "Retourne un film selon l'id")
     @GetMapping(value = "/film/{id}")
     public Film afficherFilm(@PathVariable int id){
@@ -38,7 +38,7 @@ public class FilmController {
         return film;
     }
 
-    //Retourne une liste de film en bas du prix maximum
+    // Retourne une liste de film en bas du prix maximum
     @ApiOperation(value = "Retourne tous les films en dessous d'un prix max")
     @GetMapping(value = "/films/max/{prixMax}")
     public List<Film> listeFilmBasPrixMax(@PathVariable double prixMax){
@@ -47,7 +47,7 @@ public class FilmController {
         return listeFilm;
     }
 
-    //Retourne une liste de film en haut du prix min
+    // Retourne une liste de film en haut du prix min
     @ApiOperation(value = "Retourne tous les films en haut d'un prix min")
     @GetMapping(value = "/films/min/{prixMin}")
     public List<Film> listeFilmHautPrixMin(@PathVariable double prixMin){
@@ -56,7 +56,7 @@ public class FilmController {
         return listeFilm;
     }
 
-    //Ajouter un film dans la base de données
+    // Ajouter un film dans la base de données
     @PostMapping(value = "/film")
     public ResponseEntity<Void> ajouterFilm(@Valid @RequestBody Film film){
         Film film1 = filmDao.save(film);
