@@ -7,18 +7,55 @@
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css"  href="../css.css"/>
 </head>
-<body>
+<body style="background-color:#eaebed;">
     <div class="container">
-        <div class="row" style=" margin-top:5em;">
+        <div class="row" style="margin-top:5em;">
             <div class="col-lg-6">
                 <img src="../images/logofilm.png" id="logo">
             </div>
             <div class="col-lg-6">
-                <button type="button" class="btn btn-success" id="btnAjouter">Ajouter</button>
+                <button onclick="myFunction()">Try it</button>
+                <button type="button" class="btn btn-success" id="btnAjouter" onclick="afficherAjout()">Ajouter</button>
             </div>
         </div>
         <hr />
-        <h2>Films Marvel :</h2>
+        <form>
+            <div style="background-color:white; padding:1em; border-radius: 5px; box-shadow: 4px 6px 5px -4px rgba(0,0,0,0.75); margin-bottom:1em;" id="ajoutFilm">
+                <h2>Ajout de film</h2>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Form pour ajouter film -->
+                            <label for="titreAdd">Titre : </label>
+                            <input type="text" class="form-control" id="titreAdd" placeholder="Titre">
+                            <br />
+                            <label for="producteurAdd">Compagnie : </label>
+                            <select class="form-control" id="producteurAdd">
+                                <option>Century Fox</option>
+                                <option>Marvel</option>
+                                <option>Paramount Picture</option>
+                                <option>Sony</option>
+                            </select>
+                            <br />
+                            <label for="titreAdd">Date de sortie : </label>
+                            <input type="date" class="form-control" id="dateAdd"/>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="descriptionAdd">Description : </label>
+                            <input type="text" class="form-control" id="descriptionAdd" placeholder="Description">
+                            <br />
+                            <label for="prixAdd">Prix par visionnement : </label>
+                            <input type="text" class="form-control" id="prixAdd" placeholder="Description">
+                            <br /> <br />
+                            <input type="submit" class="btn btn-primary" value="Enregistrer" style="margin-top:0.5em;">
+                            <button type="button" class="btn btn-danger btn" style="margin-top:0.5em;">Annuler</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <h2 class="titre">Films Marvel :</h2>
         <div class="row">
             <div th:each="filmMarvel : ${listeMarvel}" class="col-md-4">
                 <div class="col-lg-12 film">
@@ -57,7 +94,12 @@
 
     </div>
 
-
+    <!-- Script -->
     <script type="text/javascript" src="webjars/bootstrap/4.0.0-2/js/bootstrap.min.js"></script>
+    <script>
+function myFunction() {
+  document.getElementById("ajoutFilm").style.display = "none";
+}
+</script>
 </body>
 </html>
