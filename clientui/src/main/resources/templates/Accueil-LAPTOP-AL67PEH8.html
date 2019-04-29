@@ -19,7 +19,7 @@
         </div>
         <hr />
         <form>
-            <div style="background-color:white; padding:1em; border-radius: 5px; box-shadow: 4px 6px 5px -4px rgba(0,0,0,0.75); margin-bottom:1em; display: none;" id="ajoutFilm">
+            <div style="background-color:white; padding:1em; border-radius: 5px; box-shadow: 4px 6px 5px -4px rgba(0,0,0,0.75); margin-bottom:1em; display:none;" id="ajoutFilm">
                 <h2>Ajout de film</h2>
 
                 <div class="form-group">
@@ -37,7 +37,7 @@
                                 <option>Sony</option>
                             </select>
                             <br />
-                            <label for="titreAdd">Date de sortie : </label>
+                            <label for="dateAdd">Date de sortie : </label>
                             <input type="date" class="form-control" id="dateAdd"/>
                         </div>
                         <div class="col-lg-6">
@@ -45,7 +45,7 @@
                             <input type="text" class="form-control" id="descriptionAdd" placeholder="Description">
                             <br />
                             <label for="prixAdd">Prix par visionnement : </label>
-                            <input type="text" class="form-control" id="prixAdd" placeholder="Description">
+                            <input type="text" class="form-control" id="prixAdd" placeholder="prix">
                             <br /> <br />
                             <input type="submit" class="btn btn-primary" value="Enregistrer" style="margin-top:0.5em;">
                             <button type="button" class="btn btn-danger btn" style="margin-top:0.5em;" onclick="cacherAjout()">Annuler</button>
@@ -90,42 +90,6 @@
                 </div>
             </div>
         </div>
-        <br />
-        <hr />
-        <h2>Films Paramount Picture : </h2>
-        <div class="row">
-            <div th:each="filmParamount : ${listeParamount}" class="col-md-4">
-                <div class="col-lg-12 film">
-                    <div class="col-lg-12">
-                        <a th:href="@{|/detail-filmParamount/${filmParamount.id}|}" >
-                            <p th:text= "${filmParamount.titre}"></p>
-                            <img th:src="${filmParamount.lienImage}"  class="card-img-top poster" />
-                        </a>
-                    </div>
-                    <div class="col-lg-12 zoneBtn">
-                        <button type="button" class="btn btn-primary btn">Modifier</button>
-                        <button type="button" class="btn btn-danger btn">Supprimer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h2>Films Sony :</h2>
-        <div class="row">
-            <div th:each="filmSony : ${listeSony}" class="col-md-4">
-                <div class="col-lg-12 film">
-                    <div class="col-lg-12">
-                        <a th:href="@{|/detail-filmSony/${filmSony.id}|}" >
-                            <p th:text= "${filmSony.titre}"></p>
-                            <img th:src="${filmSony.lienImage}"  class="card-img-top poster" />
-                        </a>
-                    </div>
-                    <div class="col-lg-12 zoneBtn">
-                        <button type="button" class="btn btn-primary btn">Modifier</button>
-                        <button type="button" class="btn btn-danger btn">Supprimer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- Script -->
@@ -143,6 +107,6 @@
             document.getElementById("prixAdd").value = "";
             document.getElementById("btnAjouter").style.display = "block";
         }
-    </script>
+</script>
 </body>
 </html>
