@@ -1,0 +1,36 @@
+body{
+    background-color: #eaebed;
+}
+/* IDs */
+#logo{
+    width: 10em;
+}
+#btnAjouter{
+    float: right;
+    margin-top: 5.5em;
+}
+/* Classes */
+.poster{
+    width: 17em;
+    transition:0.4s;
+}
+.poster:hover{
+    width: 17.5em;
+    opacity: 0.6;
+    margin-bottom: -0.75em;
+}
+
+.film{
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    box-shadow: 4px 6px 5px -4px rgba(0,0,0,0.75);
+}
+.zoneBtn{
+    margin-top:2em;
+}
+.btn{
+    width: 8em;
+}
