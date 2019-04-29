@@ -3,6 +3,7 @@ package com.clientui.clientui.controller;
 import com.clientui.clientui.beans.FilmBean;
 import com.clientui.clientui.proxies.CenturyFoxProxy;
 import com.clientui.clientui.proxies.MarvelProxy;
+import com.clientui.clientui.proxies.ParamountProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,6 +17,8 @@ public class ClientController {
     MarvelProxy filmProxy;
     @Autowired
     CenturyFoxProxy centuryFoxProxy;
+    @Autowired
+    ParamountProxy paramountProxy;
 
     @RequestMapping("/")
     public String accueil(Model model){
@@ -23,10 +26,13 @@ public class ClientController {
         List<FilmBean> listeMarvel = filmProxy.listeFilms();
         //Films centuryFox
         List<FilmBean> listeCenturyFox = centuryFoxProxy.listeFilms();
+        //Films paramountFox
+        List<FilmBean> listeParamount = paramountProxy.listeFilms();
 
         //Ajout des listes
         model.addAttribute("listeMarvel", listeMarvel);
         model.addAttribute("listeCenturyFox", listeCenturyFox);
+        model.addAttribute("listeParamount", listeParamount);
 
         //Ramene la page d'accueil
         return "Accueil";

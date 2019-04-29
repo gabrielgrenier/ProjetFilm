@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name="apiMarvel", url = "localhost:9191")
-public interface MarvelProxy {
-    @GetMapping(value = "Films")
+@FeignClient(name="apiParamount", url = "localhost:9292")
+public interface ParamountProxy {
+    @GetMapping(value = "films")
     List<FilmBean> listeFilms();
 
-    @GetMapping(value = "Film/{id}")
+    @GetMapping(value = "film/{id}")
     FilmBean afficherUnFilm(@PathVariable("id") int id);
 }
