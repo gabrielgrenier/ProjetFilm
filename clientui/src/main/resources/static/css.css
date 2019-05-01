@@ -1,5 +1,6 @@
 body{
     background-color: #eaebed;
+    /*background-color: red;*/
 }
 
 /* IDs */
@@ -20,13 +21,15 @@ body{
 /* Classes */
 .poster{
     max-width: 17em;
+    min-height: 25em;
     max-height: 25em;
     transition:0.4s;
 }
 .poster:hover{
     max-width: 17.5em;
+    min-height: 25.5em;
     opacity: 0.6;
-    margin-bottom: -0.75em;
+    margin-bottom: -0.5em;
 }
 
 .film{

@@ -8,11 +8,9 @@ import com.clientui.clientui.proxies.SonyProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -46,7 +44,18 @@ public class ClientController {
         //Ramene la page d'accueil
         return "Accueil";
     }
+    //Ajout de film
+    @PostMapping(value = "/ajouterFilm")
+    public String ajouterFilm(Model model, @RequestParam("titre") String titre, @RequestParam("producteur") String producteur,
+                              @RequestParam("date") String date, @RequestParam("description") String description,
+                              @RequestParam("prix") Double prix){
 
+        FilmBean filmTemp = new FilmBean();
+
+        return "AffichageFilm"/*+titre+producteur+date+description+prix*/;
+    }
+
+    //Affichage details films
     @GetMapping(value = "/detail-filmCenturyFox/{id}")
     public String afficherFilmCentryFox(Model model,@PathVariable(value = "id")  int filmId){
         // Aller chercher le film
@@ -58,7 +67,6 @@ public class ClientController {
         //Ramene la page d'accueil
         return "AffichageFilm";
     }
-
     @GetMapping(value = "/detail-filmMarvel/{id}")
     public String afficherFilmMarvel(Model model,@PathVariable(value = "id")  int filmId){
         // Aller chercher le film
@@ -70,7 +78,6 @@ public class ClientController {
         //Ramene la page d'accueil
         return "AffichageFilm";
     }
-
     @GetMapping(value = "/detail-filmParamount/{id}")
     public String afficherFilmParamount(Model model,@PathVariable(value = "id")  int filmId){
         // Aller chercher le film
@@ -82,7 +89,6 @@ public class ClientController {
         //Ramene la page d'accueil
         return "AffichageFilm";
     }
-
     @GetMapping(value = "/detail-filmSony/{id}")
     public String afficherFilmSony(Model model,@PathVariable(value = "id")  int filmId){
         // Aller chercher le film
