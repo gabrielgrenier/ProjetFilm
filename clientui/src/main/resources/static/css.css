@@ -20,13 +20,15 @@ body{
 /* Classes */
 .poster{
     max-width: 17em;
+    min-height: 25em;
     max-height: 25em;
     transition:0.4s;
 }
 .poster:hover{
     max-width: 17.5em;
+    min-height: 25.5em;
     opacity: 0.6;
-    margin-bottom: -0.75em;
+    margin-bottom: -0.5em;
 }
 
 .film{
@@ -35,6 +37,7 @@ body{
     text-align: center;
     padding-top: 1em;
     padding-bottom: 2em;
+    margin-bottom: 1em;
     box-shadow: 4px 6px 5px -4px rgba(0,0,0,0.75);
 }
 .zoneBtn{
