@@ -1,6 +1,5 @@
 body{
     background-color: #eaebed;
-    /*background-color: red;*/
 }
 
 /* IDs */
@@ -38,6 +37,7 @@ body{
     text-align: center;
     padding-top: 1em;
     padding-bottom: 2em;
+    margin-bottom: 1em;
     box-shadow: 4px 6px 5px -4px rgba(0,0,0,0.75);
 }
 .zoneBtn{

@@ -28,10 +28,10 @@
                         <div class="col-lg-6">
                             <!-- Form pour ajouter film -->
                             <label for="titreAdd">Titre : </label>
-                            <input type="text" class="form-control" id="titreAdd" name="titre" placeholder="Titre">
+                            <input type="text" class="form-control" id="titreAdd" name="titre" placeholder="Titre" required />
                             <br />
                             <label for="producteurAdd">Compagnie : </label>
-                            <select class="form-control" id="producteurAdd" name="producteur">
+                            <select class="form-control" id="producteurAdd" name="producteur" required>
                                 <option>Century Fox</option>
                                 <option>Marvel</option>
                                 <option>Paramount Picture</option>
@@ -39,16 +39,19 @@
                             </select>
                             <br />
                             <label for="dateAdd">Date de sortie : </label>
-                            <input type="date" class="form-control" id="dateAdd" name="date"/>
+                            <input type="date" class="form-control" id="dateAdd" name="date" required/>
                         </div>
                         <div class="col-lg-6">
                             <label for="descriptionAdd">Description : </label>
-                            <input type="text" class="form-control" id="descriptionAdd" name="description" placeholder="Description">
+                            <input type="text" class="form-control" id="descriptionAdd" name="description" placeholder="Description" required/>
                             <br />
                             <label for="prixAdd">Prix par visionnement : </label>
-                            <input type="number" class="form-control" id="prixAdd" name="prix" placeholder="Prix">
-                            <br /> <br />
-                            <!-- ajouter lien image -->
+                            <input type="number" class="form-control" id="prixAdd" name="prix" placeholder="Prix" required/>
+                            <br />
+                            <label for="lienAdd">Lien du poster : </label>
+                            <input type="text" class="form-control" id="lienAdd" name="lien" placeholder="https://..." required/>
+                        </div>
+                        <div class="col-lg-12 text-center">
                             <input type="submit" class="btn btn-primary btnZoneAdd" value="Enregistrer">
                             <button type="button" class="btn btn-danger btnZoneAdd" onclick="cacherAjout()">Annuler</button>
                         </div>

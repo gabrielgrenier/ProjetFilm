@@ -69,7 +69,7 @@ public class Film implements Serializable {
         this.dateSortie = dateSortie;
     }
     public void setPrixVisionnement(double prixVisionnement) {
-        prixVisionnement = prixVisionnement;
+        this.prixVisionnement = prixVisionnement;
     }
     public void setLienImage(String lienImage) {
         this.lienImage = lienImage;
