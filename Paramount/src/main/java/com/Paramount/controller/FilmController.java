@@ -22,7 +22,7 @@ public class FilmController {
 
     // Retourne tous les films de paramount picture
     @ApiOperation(value = "Retourne tous les films")
-    @GetMapping(value = "/films")
+    @GetMapping(value = "/Films")
     public List<Film> listeFilms(){
         List<Film> films = filmDao.findAll();
         if(films.isEmpty()){throw new FilmIntrouvableException("Il n'y a pas de films disponible");}
@@ -31,7 +31,7 @@ public class FilmController {
 
     // Retourne un film
     @ApiOperation(value = "Retourne un film selon l'id")
-    @GetMapping(value = "/film/{id}")
+    @GetMapping(value = "/Film/{id}")
     public Film afficherFilm(@PathVariable int id){
         Film film = filmDao.findById(id);
         if(film == null){throw new FilmIntrouvableException("Film introuvable avec l'id : " + id);}
@@ -40,7 +40,7 @@ public class FilmController {
 
     // Retourne une liste de film en bas du prix maximum
     @ApiOperation(value = "Retourne tous les films en dessous d'un prix max")
-    @GetMapping(value = "/films/max/{prixMax}")
+    @GetMapping(value = "/Films/max/{prixMax}")
     public List<Film> listeFilmBasPrixMax(@PathVariable double prixMax){
         List<Film> listeFilm = filmDao.findByPrixVisionnementLessThan(prixMax);
         if(listeFilm == null){throw new FilmIntrouvableException("Aucun film en bas du prix : " + prixMax);}
@@ -49,7 +49,7 @@ public class FilmController {
 
     // Retourne une liste de film en haut du prix min
     @ApiOperation(value = "Retourne tous les films en haut d'un prix min")
-    @GetMapping(value = "/films/min/{prixMin}")
+    @GetMapping(value = "/Films/min/{prixMin}")
     public List<Film> listeFilmHautPrixMin(@PathVariable double prixMin){
         List<Film> listeFilm = filmDao.findByPrixVisionnementGreaterThan(prixMin);
         if(listeFilm == null){throw new FilmIntrouvableException("Aucun film en bas du prix : " + prixMin);}
@@ -57,7 +57,7 @@ public class FilmController {
     }
 
     // Ajouter un film dans la base de données
-    @PostMapping(value = "/film")
+    @PostMapping(value = "/Film")
     public ResponseEntity<Void> ajouterFilm(@Valid @RequestBody Film film){
         Film film1 = filmDao.save(film);
         if(film1==null){return ResponseEntity.noContent().build();}
