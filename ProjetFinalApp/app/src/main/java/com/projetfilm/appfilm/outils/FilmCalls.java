@@ -21,21 +21,23 @@ public class FilmCalls {
     }
 
     public static void fetchFilms(final Callbacks callbacks, String api){
-        String port = "";
+        int port = 0;
+        String getAllMovie = "Films";
         final WeakReference<Callbacks> callbacksWeakReference = new WeakReference<Callbacks>(callbacks);
 
         switch(api){
             case "Marvel" :
-                port="9191";
+                port=9191;
                 break;
-            case "Centry" :
-                port="6969";
+            case "Century" :
+                port=6969;
                 break;
             case "Paramount" :
-                port="9292";
+                port=9292;
+                getAllMovie = "films";
                 break;
             case "Sony" :
-                port="9291";
+                port=9291;
                 break;
         }
 
@@ -46,7 +48,7 @@ public class FilmCalls {
 
         GetData filmServices = retrofit.create(GetData.class);
 
-        Call<List<Film>> call = filmServices.getFilms();
+        Call<List<Film>> call = filmServices.getFilms(getAllMovie);
 
         call.enqueue(new Callback<List<Film>>() {
             @Override
