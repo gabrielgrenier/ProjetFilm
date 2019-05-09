@@ -36,7 +36,7 @@ private Button mParamountBtn;
             @Override
             public void onClick(View v) {
                 Intent ApiActivityIntent = new Intent(MainActivity.this, ApiActivity.class);
-                ApiActivityIntent.putExtra("id","Centry");
+                ApiActivityIntent.putExtra("id","Century");
                 startActivity(ApiActivityIntent);
             }
         });
