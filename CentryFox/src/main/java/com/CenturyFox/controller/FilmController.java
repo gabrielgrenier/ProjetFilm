@@ -76,8 +76,4 @@ public class FilmController {
         System.out.println(id);
         filmDao.delete(tempFilm);
     }
-    @PutMapping (value = "/Film")
-    public void updateFilm(@RequestBody Film film) {
-        filmDao.save(film);
-    }
 }
