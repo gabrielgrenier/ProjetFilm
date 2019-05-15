@@ -164,23 +164,28 @@ public class ClientController {
         return "ModifierFilm";
     }
     //Ajout de film
-    @RequestMapping(value = "/Film")
-    public RedirectView modificationFilm(Model model, @RequestParam("titre") String titre, @RequestParam("producteur") String producteur,
-                                    @RequestParam("date") String date, @RequestParam("description") String description,
-                                    @RequestParam("prix") Double prix, @RequestParam("lien") String lienImage) {
+    @RequestMapping(value = "/modifier-film")
+    public RedirectView modificationFilm(Model model,
+                                         @RequestParam("id") int id,
+                                         @RequestParam("titre") String titre,
+                                         @RequestParam("producteur") String producteur,
+                                         @RequestParam("date") String date,
+                                         @RequestParam("description") String description,
+                                         @RequestParam("prix") Double prix,
+                                         @RequestParam("lien") String lienImage) {
         try {
             //Converti la date
             Date dateTemp = new SimpleDateFormat("yyyy-MM-dd").parse(date);
 
             //Crée l'objet
             FilmBean filmTemp = new FilmBean();
+            filmTemp.setId(id);
             filmTemp.setDateSortie(dateTemp);
             filmTemp.setDescription(description);
             filmTemp.setLienImage(lienImage);
             filmTemp.setPrixVisionnement(prix);
             filmTemp.setTitre(titre);
 
-            System.out.println(producteur);
             // Choisit d'envoyer l'objet au bon API
             switch (producteur) {
                 case "Century Fox":
