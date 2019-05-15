@@ -67,4 +67,11 @@ public class FilmController {
                 .toUri();
         return ResponseEntity.created(location).build();
     }
+    // Supprimer un film de la BD
+    @DeleteMapping (value = "/Film/{id}")
+    public void supprimerFilm(@PathVariable int id) {
+        Film tempFilm = new Film();
+        tempFilm.setId(id);
+        filmDAO.delete(tempFilm);
+    }
 }
