@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Films</title>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css"  href="../css.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="col-lg-12 film">
+                    <form action="/modifier-film" method="post">
+                        <h2>Modification de film</h2>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <!-- Form pour modifier un film -->
+                                    <input type="hidden"
+                                           class="form-control"
+                                           id="id"
+                                           name="id"
+                                           th:value="${film.id}"
+                                    />
+                                    <br />
+                                    <!-- Form pour modifier un film -->
+                                    <label for="titreMod">Titre : </label>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="titreMod"
+                                           name="titre"
+                                           placeholder="Titre"
+                                           th:value="${film.titre}"
+                                           required
+                                    />
+                                    <br />
+                                    <label for="producteur">Compagnie : </label>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="producteur"
+                                           name="producteur"
+                                           th:value="${producer}"
+                                    />
+                                    <br />
+                                    <label for="dateMod">Date de sortie : </label>
+                                    <input type="date"
+                                           class="form-control"
+                                           id="dateMod"
+                                           name="date"
+                                           th:value="${#dates.format(film.dateSortie,'yyyy-MM-dd')}"
+                                           required
+                                    />
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="descriptionMod">Description : </label>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="descriptionMod"
+                                           name="description"
+                                           placeholder="Description"
+                                           required
+                                           th:value="${film.description}"
+                                    />
+                                    <br />
+                                    <label for="prixMod">Prix par visionnement : </label>
+                                    <input type="number"
+                                           class="form-control"
+                                           id="prixMod" name="prix"
+                                           placeholder="Prix"
+                                           required
+                                           th:value="${film.prixVisionnement}"
+                                    />
+                                    <br />
+                                    <label for="lienMod">Lien du poster : </label>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="lienMod"
+                                           name="lien"
+                                           placeholder="${film.lienImage}"
+                                           required
+                                           th:value="${film.lienImage}"
+                                    />
+                                </div>
+                                <div class="col-lg-12 text-center">
+                                    <input type="submit"
+                                           class="btn btn-primary btnZoneMod"
+                                           value="Enregistrer">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="webjars/bootstrap/4.0.0-2/js/bootstrap.min.js"></script>
+</body>
+</html>

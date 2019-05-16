@@ -68,4 +68,10 @@ public class FilmController {
                 .toUri();
         return ResponseEntity.created(location).build();
     }
+    @DeleteMapping (value = "/film/{id}")
+    public void supprimerFilm(@PathVariable int id) {
+        Film tempFilm = new Film();
+        tempFilm.setId(id);
+        filmDao.delete(tempFilm);
+    }
 }
