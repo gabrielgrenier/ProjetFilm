@@ -1,0 +1,5 @@
+com\SonySoap\DAO\FilmDAO.class
+com\SonySoap\Model\Film.class
+com\SonySoap\Service\SonyService.class
+com\SonySoap\DAO\FilmDAOImp.class
+com\SonySoap\DAO\ConnexionDB.class
