@@ -2,22 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a54a4e06-7310-4ec3-b560-783c1a5d1f95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../SoapCentury/.idea/SoapCentury.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SoapCentury/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SoapCentury/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SoapCentury/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SoapCentury/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SoapCentury/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SoapCentury/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SoapCentury/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SoapCentury/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SoapCentury/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SoapCentury/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SoapCentury/CenturySoap/CenturySoap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapCentury/CenturySoap/target/CenturySoap.war" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapCentury/CenturySoap/target/CenturySoap.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapCentury/CenturySoap/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapCentury/CenturySoap/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapCentury/CenturySoap/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapCentury/CenturySoap/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ParamountClient/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ParamountClient/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ParamountClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/TESTBDSOAP.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/Add.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/AddResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/CenturyFoxService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/CenturySoap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/Delete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/DeleteResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/Edit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/EditResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/Film.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/GetFilm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/GetFilmResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/GetFilms.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/GetFilmsResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/ObjectFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/Add.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/AddResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/CenturyFoxService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/CenturySoap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/Delete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/DeleteResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/Edit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/EditResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/Film.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/GetFilm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/GetFilmResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/GetFilms.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/GetFilmsResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/ObjectFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/package-info.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/CenturySoap/target/" />
     <ignored path="$PROJECT_DIR$/ParamountSoap/target/" />
@@ -46,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ParamountSoap/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+            <state relative-caret-position="210">
+              <caret line="28" column="16" selection-start-line="27" selection-start-column="17" selection-end-line="28" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -245,7 +272,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558026319252" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558027512178" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ParamountSoap/pom.xml" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -278,7 +305,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="983" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25292096" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -299,7 +325,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24948454" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" weight="0.3298969" />
@@ -307,6 +333,10 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CenturySoap/src/main/java/com/CenturySoap/Service/CenturyFoxService.java" />
@@ -363,8 +393,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ParamountSoap/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+        <state relative-caret-position="210">
+          <caret line="28" column="16" selection-start-line="27" selection-start-column="17" selection-end-line="28" selection-end-column="16" />
         </state>
       </provider>
     </entry>
