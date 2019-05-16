@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CenturySoap/CenturySoap.iml" filepath="$PROJECT_DIR$/CenturySoap/CenturySoap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ParamountSoap/ParamountSoap.iml" filepath="$PROJECT_DIR$/ParamountSoap/ParamountSoap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SoapParamount.iml" filepath="$PROJECT_DIR$/.idea/SoapParamount.iml" />
+    </modules>
+  </component>
+</project>
