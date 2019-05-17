@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/generated/SonyClient/Add.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/generated/SonyClient/AddResponse.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/generated/SonyClient/Delete.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/generated/SonyClient/DeleteResponse.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/generated/SonyClient/Edit.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/generated/SonyClient/EditResponse.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/generated/SonyClient/Film.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/generated/SonyClient/GetFilm.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/generated/SonyClient/GetFilmResponse.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/generated/SonyClient/GetFilms.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/generated/SonyClient/GetFilmsResponse.java" charset="windows-1252" />
+  </component>
+</project>

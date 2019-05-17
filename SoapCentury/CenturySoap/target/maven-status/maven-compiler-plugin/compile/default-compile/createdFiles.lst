@@ -1,0 +1,5 @@
+com\CenturySoap\Model\Film.class
+com\CenturySoap\Service\CenturyFoxService.class
+com\CenturySoap\DAO\FilmDAOImp.class
+com\CenturySoap\DAO\FilmDAO.class
+com\CenturySoap\DAO\ConnexionDB.class

@@ -8,10 +8,11 @@ import java.util.List;
 
 @Repository
 public interface FilmDao extends JpaRepository<Film, Integer> {
-    //Find by id
+    // Find by id
     Film findById(int id);
-    //Find film en haut du prix min
+    // Find film en haut du prix min
     List<Film> findByPrixVisionnementGreaterThan(double prixMin);
-    //Find film en bas du prix max
+    // Find film en bas du prix max
     List<Film> findByPrixVisionnementLessThan(double prixMax);
+
 }
