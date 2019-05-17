@@ -2,49 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a54a4e06-7310-4ec3-b560-783c1a5d1f95" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ParamountClient/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ParamountClient/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ParamountClient/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ParamountClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/TESTBDSOAP.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/Add.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/AddResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/CenturyFoxService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/CenturySoap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/Delete.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/DeleteResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/Edit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/EditResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/Film.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/GetFilm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/GetFilmResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/GetFilms.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/GetFilmsResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/ObjectFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/Add.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/AddResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/CenturyFoxService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/CenturySoap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/Delete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/DeleteResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/Edit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/EditResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/Film.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/GetFilm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/GetFilmResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/GetFilms.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/GetFilmsResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/ObjectFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParamountClient/target/classes/generated/CenturyClient/package-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SoapCentury/CenturyClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapCentury/CenturyClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SoapCentury/CenturySoap/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapCentury/CenturySoap/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SoapCentury/CenturySoap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapCentury/CenturySoap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SoapCentury/CenturySoap/CenturySoap.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/CenturySoap/target/" />
     <ignored path="$PROJECT_DIR$/ParamountSoap/target/" />
@@ -70,10 +31,10 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParamountSoap/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="374">
               <caret line="28" column="16" selection-start-line="27" selection-start-column="17" selection-end-line="28" selection-end-column="16" />
             </state>
           </provider>
@@ -91,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParamountSoap/src/main/java/com/ParamountSoap/DAO/FilmDAOImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
+            <state relative-caret-position="841">
               <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
             </state>
           </provider>
@@ -106,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ParamountSoap/src/main/java/com/ParamountSoap/DAO/ConnexionDB.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -158,10 +119,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1088" />
-    <option name="y" value="172" />
-    <option name="width" value="1522" />
-    <option name="height" value="1952" />
+    <option name="x" value="-14" />
+    <option name="y" value="-14" />
+    <option name="width" value="1939" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -273,7 +234,7 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558027512178" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ParamountSoap/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SoapSony/SonySoap" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -304,16 +265,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="983" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25292096" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25586355" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32942554" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32942554" />
@@ -324,6 +285,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24948454" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -345,9 +307,32 @@
     <entry file="file://$PROJECT_DIR$/CenturySoap/pom.xml" />
     <entry file="file://$PROJECT_DIR$/CenturyClient/TESTBDSOAP.iml" />
     <entry file="file://$PROJECT_DIR$/CenturySoap/CenturySoap.iml" />
-    <entry file="file://$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/Add.java">
+    <entry file="file://$PROJECT_DIR$/ParamountClient/src/main/java/generated/CenturyClient/Add.java" />
+    <entry file="file://$PROJECT_DIR$/ParamountSoap/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParamountSoap/src/main/java/com/ParamountSoap/DAO/FilmDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612" />
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParamountSoap/ParamountSoap.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParamountSoap/src/main/java/com/ParamountSoap/Service/ParamountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParamountSoap/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="16" selection-start-line="27" selection-start-column="17" selection-end-line="28" selection-end-column="16" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParamountSoap/src/main/java/com/ParamountSoap/Model/Film.java">
@@ -359,15 +344,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ParamountSoap/src/main/java/com/ParamountSoap/DAO/FilmDAOImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
+        <state relative-caret-position="841">
           <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParamountSoap/src/main/java/com/ParamountSoap/DAO/FilmDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -375,26 +353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParamountSoap/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParamountSoap/src/main/java/com/ParamountSoap/Service/ParamountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParamountSoap/ParamountSoap.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParamountSoap/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" column="16" selection-start-line="27" selection-start-column="17" selection-end-line="28" selection-end-column="16" />
         </state>
       </provider>
     </entry>
