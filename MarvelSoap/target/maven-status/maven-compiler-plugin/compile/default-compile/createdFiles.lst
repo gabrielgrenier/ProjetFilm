@@ -1,0 +1,5 @@
+com\MarvelSoap\Service\MarvelService.class
+com\MarvelSoap\DAO\FilmDAOImp.class
+com\MarvelSoap\DAO\FilmDAO.class
+com\MarvelSoap\Model\Film.class
+com\MarvelSoap\DAO\ConnexionDB.class
