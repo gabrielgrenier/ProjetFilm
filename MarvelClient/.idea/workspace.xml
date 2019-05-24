@@ -2,23 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711cd103-298d-4c75-b188-2880db9a1275" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../SoapCentury/CenturyClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapCentury/CenturyClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapCentury/CenturyClient/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapCentury/CenturyClient/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapCentury/CenturySoap/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapCentury/CenturySoap/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapCentury/CenturySoap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapCentury/CenturySoap/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapCentury/CenturySoap/CenturySoap.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapParamount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapParamount/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapParamount/ParamountClient/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapParamount/ParamountClient/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapParamount/ParamountClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapParamount/ParamountClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapParamount/ParamountSoap/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapParamount/ParamountSoap/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapParamount/ParamountSoap/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapParamount/ParamountSoap/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapParamount/ParamountSoap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapParamount/ParamountSoap/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapParamount/ParamountSoap/ParamountSoap.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapSony/SonyClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapSony/SonyClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapSony/SonySoap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapSony/SonySoap/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapSony/SonySoap/target/SonySoap.war" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapSony/SonySoap/target/SonySoap.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapSony/SonySoap/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapSony/SonySoap/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoapSony/SonySoap/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../SoapSony/SonySoap/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MarvelSoap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MarvelSoap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetFinalApp/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetFinalApp/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetFinalApp/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetFinalApp/app/src/main/java/com/projetfilm/appfilm/controller/ApiActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetFinalApp/app/src/main/java/com/projetfilm/appfilm/controller/ApiActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetFinalApp/app/src/main/java/com/projetfilm/appfilm/controller/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetFinalApp/app/src/main/java/com/projetfilm/appfilm/controller/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetFinalApp/app/src/main/java/com/projetfilm/appfilm/outils/FilmCalls.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetFinalApp/app/src/main/java/com/projetfilm/appfilm/outils/FilmCalls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetFinalApp/app/src/main/java/com/projetfilm/appfilm/outils/GetData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetFinalApp/app/src/main/java/com/projetfilm/appfilm/outils/GetData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetFinalApp/app/src/main/java/com/projetfilm/appfilm/view/FilmViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetFinalApp/app/src/main/java/com/projetfilm/appfilm/view/FilmViewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjetFinalApp/app/src/main/res/layout/row_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjetFinalApp/app/src/main/res/layout/row_layout.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,8 +26,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            <state relative-caret-position="119">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,6 +74,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -103,17 +100,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MarvelClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MarvelClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="MarvelSoap" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558128901624" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SoapParamount/ParamountClient" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -159,8 +163,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -203,10 +208,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/generated/MarvelSoap/AddResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

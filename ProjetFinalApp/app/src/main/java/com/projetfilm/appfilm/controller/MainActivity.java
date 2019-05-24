@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTitre;
     private Button mMarvelBtn;
     private Button mCentryFoxBtn;
-private Button mParamountBtn;
+    private Button mParamountBtn;
     private Button mSonyBtn;
 
     @Override
