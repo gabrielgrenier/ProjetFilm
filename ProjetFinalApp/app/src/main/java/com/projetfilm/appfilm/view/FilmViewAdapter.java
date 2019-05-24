@@ -1,5 +1,6 @@
 package com.projetfilm.appfilm.view;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.projetfilm.appfilm.R;
+import com.projetfilm.appfilm.controller.AfficherFilmActivity;
 import com.projetfilm.appfilm.model.Film;
 import com.squareup.picasso.Picasso;
 
@@ -17,6 +19,9 @@ import java.util.List;
 public class FilmViewAdapter extends RecyclerView.Adapter<FilmViewAdapter.ViewHolder>{
 
     private List<Film> films;
+    private TextView textView;
+    private ImageView imageView;
+    private LinearLayout linearLayout;
 
     public FilmViewAdapter(List<Film> films) {this.films = films;}
 
@@ -31,10 +36,19 @@ public class FilmViewAdapter extends RecyclerView.Adapter<FilmViewAdapter.ViewHo
     public void onBindViewHolder(ViewHolder holder, int position) {
         final Film film = films.get(position);
 
-        TextView textView = holder.titreFilm;
+        textView = holder.titreFilm;
         textView.setText(film.getTitre());
-        ImageView imageView = holder.posterFilm;
+        imageView = holder.posterFilm;
         Picasso.get().load(film.getLienImage()).fit().into(imageView);
+        linearLayout = holder.carteFilm;
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent AfficherFilmActivityIntent = new Intent(view.getContext(), AfficherFilmActivity.class);
+                AfficherFilmActivityIntent.putExtra("id",film.getId());
+                view.getContext().startActivity(AfficherFilmActivityIntent);
+            }
+        });
     }
 
     @Override
