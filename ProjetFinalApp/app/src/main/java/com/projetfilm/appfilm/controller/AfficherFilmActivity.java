@@ -14,7 +14,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class AfficherFilmActivity extends AppCompatActivity implements FilmCalls.Callbacks{
+public class AfficherFilmActivity extends AppCompatActivity implements FilmCalls.CallbackFilm{
 
     private Film film;
     private TextView titreFilm;
@@ -26,17 +26,15 @@ public class AfficherFilmActivity extends AppCompatActivity implements FilmCalls
         setContentView(R.layout.activity_afficher_film);
 
         FilmCalls.fetchFilm(this, getIntent().getStringExtra("id"));
-
         titreFilm = (TextView) findViewById(R.id.titreFilm);
         posterFilm = (ImageView) findViewById(R.id.posterFilm);
-
-        //titreFilm.setText(getIntent().getStringExtra("id"));
-        Picasso.get().load(getIntent().getStringExtra("imageUrl")).fit().into(posterFilm);
     }
 
     @Override
-    public void onResponse(@Nullable List<Film> films) {
-
+    public void onResponse(@Nullable Film film) {
+        Toast.makeText(AfficherFilmActivity.this, getIntent().getStringExtra("id"), Toast.LENGTH_SHORT).show();
+        //titreFilm.setText(getIntent().getStringExtra("id"));
+        //Picasso.get().load(film.getLienImage()).fit().into(posterFilm);
     }
 
     @Override

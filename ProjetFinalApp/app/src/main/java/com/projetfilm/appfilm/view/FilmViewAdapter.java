@@ -8,9 +8,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.projetfilm.appfilm.R;
 import com.projetfilm.appfilm.controller.AfficherFilmActivity;
+import com.projetfilm.appfilm.controller.ApiActivity;
 import com.projetfilm.appfilm.model.Film;
 import com.squareup.picasso.Picasso;
 
@@ -46,7 +48,8 @@ public class FilmViewAdapter extends RecyclerView.Adapter<FilmViewAdapter.ViewHo
             public void onClick(View view) {
                 Intent AfficherFilmActivityIntent = new Intent(view.getContext(), AfficherFilmActivity.class);
                 AfficherFilmActivityIntent.putExtra("id",film.getId());
-                view.getContext().startActivity(AfficherFilmActivityIntent);
+                Toast.makeText(ApiActivity.this, film.getId(), Toast.LENGTH_SHORT).show();
+                //view.getContext().startActivity(AfficherFilmActivityIntent);
             }
         });
     }

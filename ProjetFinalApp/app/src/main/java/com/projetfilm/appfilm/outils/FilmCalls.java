@@ -19,6 +19,10 @@ public class FilmCalls {
         void onResponse(@Nullable List<Film> films);
         void onFailure();
     }
+    public interface CallbackFilm{
+        void onResponse(@Nullable Film film);
+        void onFailure();
+    }
 
     public static void fetchFilms(final Callbacks callbacks, String api){
         String lien;
@@ -51,10 +55,10 @@ public class FilmCalls {
         });
 
     }
-    public static void fetchFilm(final Callbacks callbacks, String id){/*
+    public static void fetchFilm(final CallbackFilm callback, String id){/*
         String lien;
         int port = 0;
-        final WeakReference<Callbacks> callbacksWeakReference = new WeakReference<Callbacks>(callbacks);
+        final WeakReference<CallbackFilm> callbackWeakReference = new WeakReference<CallbackFilm>(callback);
 
         port = setPort("Marvel");
         lien = setLien("Marvel","Film",id);
@@ -71,13 +75,13 @@ public class FilmCalls {
         call.enqueue(new Callback<Film>() {
             @Override
             public void onResponse(Call<Film> call, Response<Film> response) {
-                if(callbacksWeakReference.get()!=null) callbacksWeakReference.get().onResponse(response.body());
+                if(callbackWeakReference.get()!=null) callbackWeakReference.get().onResponse(response.body());
             }
 
             @Override
             public void onFailure(Call<Film> call, Throwable t) {
                 System.out.println(t.toString());
-                if(callbacksWeakReference.get()!=null) callbacksWeakReference.get().onFailure();
+                if(callbackWeakReference.get()!=null) callbackWeakReference.get().onFailure();
             }
         });*/
     }
