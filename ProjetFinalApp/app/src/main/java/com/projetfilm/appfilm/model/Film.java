@@ -26,6 +26,15 @@ public class Film {
     @Expose
     private String description;
 
+    public Film(int id, String titre, Date dateSortie, double prixVisionnement, String lienImage, String description) {
+        this.id = id;
+        this.titre = titre;
+        this.dateSortie = dateSortie;
+        this.prixVisionnement = prixVisionnement;
+        this.lienImage = lienImage;
+        this.description = description;
+    }
+
     public int getId() { return id;}
     public void setId(int id) {this.id = id;}
 
