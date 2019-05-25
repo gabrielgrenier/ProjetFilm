@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.Menu;
 
 import com.projetfilm.appfilm.R;
 import com.projetfilm.appfilm.model.Film;
@@ -28,6 +29,12 @@ public class AfficherFilmActivity extends AppCompatActivity implements FilmCalls
         FilmCalls.fetchFilm(this, getIntent().getIntExtra("id", 0));
         titreFilm = (TextView) findViewById(R.id.titreFilm);
         posterFilm = (ImageView) findViewById(R.id.posterFilm);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.film_menu, menu);
+        return true;
     }
 
     @Override

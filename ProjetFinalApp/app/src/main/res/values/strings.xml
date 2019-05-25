@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">appFilm</string>
+    <string name="app_name">Catalogue de film</string>
+    <string name="modifier">Modifier</string>
+    <string name="supprimer">Supprimer</string>
 </resources>
