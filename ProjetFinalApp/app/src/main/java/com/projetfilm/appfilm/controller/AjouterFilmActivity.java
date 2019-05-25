@@ -32,11 +32,11 @@ public class AjouterFilmActivity extends AppCompatActivity {
         description = (EditText) findViewById(R.id.desc);
 
         bn_ajouter = (Button) findViewById(R.id.buttonAjouter);
+
         bn_ajouter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent ApiActivityIntent = new Intent(AjouterFilmActivity.this, ApiActivity.class);
-                ApiActivityIntent.putExtra("id","Sony");
                 startActivity(ApiActivityIntent);
             }
         });
