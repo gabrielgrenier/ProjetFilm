@@ -2,6 +2,7 @@ package com.projetfilm.appfilm.outils;
 
 import android.support.annotation.Nullable;
 
+import com.projetfilm.appfilm.model.API;
 import com.projetfilm.appfilm.model.Film;
 
 import java.lang.ref.WeakReference;
@@ -23,17 +24,19 @@ public class FilmCalls {
         void onResponse(@Nullable Film film);
         void onFailure();
     }
+    public static API apiInUse;
 
-    public static void fetchFilms(final Callbacks callbacks, String api){
+    public static void fetchFilms(final Callbacks callbacks, String apiName){
         String lien;
-        int port = 0;
+        if(apiInUse==null){apiInUse = new API(apiName,setPort(apiName));}
+        else if(!apiInUse.getName().equals(apiName)){apiInUse = new API(apiName,setPort(apiName));}
+
         final WeakReference<Callbacks> callbacksWeakReference = new WeakReference<Callbacks>(callbacks);
 
-        port = setPort(api);
-        lien = setLien(api,"Films",null);
+        lien = setLien(apiInUse.getName(),"Films",null);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:"+port)
+                .baseUrl("http://10.0.2.2:"+apiInUse.getPort())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -55,16 +58,14 @@ public class FilmCalls {
         });
 
     }
-    public static void fetchFilm(final CallbackFilm callback, String id){/*
+    public static void fetchFilm(final CallbackFilm callback, int id){
         String lien;
-        int port = 0;
         final WeakReference<CallbackFilm> callbackWeakReference = new WeakReference<CallbackFilm>(callback);
 
-        port = setPort("Marvel");
-        lien = setLien("Marvel","Film",id);
+        lien = setLien(apiInUse.getName(),"Film",id+"");
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:"+port)
+                .baseUrl("http://10.0.2.2:"+apiInUse.getPort())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -83,7 +84,7 @@ public class FilmCalls {
                 System.out.println(t.toString());
                 if(callbackWeakReference.get()!=null) callbackWeakReference.get().onFailure();
             }
-        });*/
+        });
     }
 
     private static int setPort(String api){

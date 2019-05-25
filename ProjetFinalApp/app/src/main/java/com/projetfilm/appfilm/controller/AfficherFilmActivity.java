@@ -25,16 +25,15 @@ public class AfficherFilmActivity extends AppCompatActivity implements FilmCalls
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_afficher_film);
 
-        FilmCalls.fetchFilm(this, getIntent().getStringExtra("id"));
+        FilmCalls.fetchFilm(this, getIntent().getIntExtra("id", 0));
         titreFilm = (TextView) findViewById(R.id.titreFilm);
         posterFilm = (ImageView) findViewById(R.id.posterFilm);
     }
 
     @Override
     public void onResponse(@Nullable Film film) {
-        Toast.makeText(AfficherFilmActivity.this, getIntent().getStringExtra("id"), Toast.LENGTH_SHORT).show();
-        //titreFilm.setText(getIntent().getStringExtra("id"));
-        //Picasso.get().load(film.getLienImage()).fit().into(posterFilm);
+        titreFilm.setText(film.getTitre());
+        Picasso.get().load(film.getLienImage()).fit().into(posterFilm);
     }
 
     @Override
