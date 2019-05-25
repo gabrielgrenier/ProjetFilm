@@ -48,7 +48,7 @@ public class FilmViewAdapter extends RecyclerView.Adapter<FilmViewAdapter.ViewHo
             public void onClick(View view) {
                 Intent AfficherFilmActivityIntent = new Intent(view.getContext(), AfficherFilmActivity.class);
                 AfficherFilmActivityIntent.putExtra("id",film.getId());
-                Toast.makeText(ApiActivity.this, film.getId(), Toast.LENGTH_SHORT).show();
+               // Toast.makeText(ApiActivity.this, film.getId(), Toast.LENGTH_SHORT).show();
                 //view.getContext().startActivity(AfficherFilmActivityIntent);
             }
         });
