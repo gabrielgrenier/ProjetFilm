@@ -10,14 +10,21 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".controller.AjouterFilmActivity"></activity>
-        <activity android:name=".controller.AfficherFilmActivity" />
-        <activity android:name=".controller.ApiActivity" />
-        <activity android:name=".controller.MainActivity">
+        android:theme="@style/Film">
+        <activity android:name=".controller.AjouterFilmActivity">
+
+        </activity>
+        <activity android:name=".controller.AfficherFilmActivity" >
+
+        </activity>
+        <activity android:name=".controller.ApiActivity" >
+
+        </activity>
+        <activity
+            android:name=".controller.MainActivity"
+            android:theme="@style/Film.List">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

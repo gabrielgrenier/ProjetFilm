@@ -16,55 +16,43 @@
         android:layout_marginBottom="5dp"
         android:layout_weight="2"
         android:gravity="center"
-        android:text="Sélection du fournisseur de film"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
-        android:textStyle="bold"></TextView>
+        android:text="Fournisseur de film"
+        android:textStyle="bold"
+        style="@style/FilmText.Title"></TextView>
 
     <Button
         android:id="@+id/activity_main_Marvel_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
         android:layout_weight="1"
-        android:background="@android:color/white"
         android:text="Marvel Studios"
-        android:textColor="@color/colorAccent"
-        android:textSize="20sp" />
+        style="@style/FilmButton"/>
 
     <Button
         android:id="@+id/activity_main_CentryFox_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
         android:layout_weight="1"
-        android:background="@android:color/white"
         android:text="Centry Fox"
-        android:textColor="@color/colorAccent"
-        android:textSize="20sp" />
+        style="@style/FilmButton"/>
 
 
     <Button
         android:id="@+id/activity_main_Paramount_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
         android:layout_weight="1"
-        android:background="@android:color/white"
         android:text="Paramount"
-        android:textColor="@color/colorAccent"
-        android:textSize="20sp" />
+
+        style="@style/FilmButton"/>
 
 
     <Button
         android:id="@+id/activity_main_Sony_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
         android:layout_weight="1"
-        android:background="@android:color/white"
         android:text="Sony"
-        android:textColor="@color/colorAccent"
-        android:textSize="20sp" />
+        style="@style/FilmButton"/>
 
 </LinearLayout>
