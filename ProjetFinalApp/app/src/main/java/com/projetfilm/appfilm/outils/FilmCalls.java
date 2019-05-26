@@ -87,7 +87,39 @@ public class FilmCalls {
         });
     }
 
-    private static int setPort(String api){
+    public static void modifierFilm(final CallbackFilm callback,Film film){
+        String lien;
+        final WeakReference<CallbackFilm> callbackWeakReference = new WeakReference<CallbackFilm>(callback);
+
+        lien = setLien(apiInUse.getName(),"Film",film.getId()+"");
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://10.0.2.2:"+apiInUse.getPort())
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        GetData filmServices = retrofit.create(GetData.class);
+
+        Call<Film> call = filmServices.modifierFilm(film,lien);
+
+        call.enqueue(new Callback<Film>() {
+            @Override
+            public void onResponse(Call<Film> call, Response<Film> response) {
+                if(response.isSuccessful()) {
+                    if(callbackWeakReference.get()!=null) callbackWeakReference.get().onResponse(response.body());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Film> call, Throwable t) {
+                if(callbackWeakReference.get()!=null) callbackWeakReference.get().onFailure();
+            }
+        });
+
+
+    }
+
+    public static int setPort(String api){
         int port = 0;
         switch(api){
             case "Marvel" :
@@ -105,7 +137,7 @@ public class FilmCalls {
         }
         return port;
     }
-    private static String setLien(String api,String action,String id){
+    public static String setLien(String api,String action,String id){
         String lien;
         switch(api){
             case "Paramount" :

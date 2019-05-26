@@ -1,8 +1,10 @@
 package com.projetfilm.appfilm.controller;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +36,17 @@ public class AfficherFilmActivity extends AppCompatActivity implements FilmCalls
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.film_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int  id =  item.getItemId();
+        if (id==R.id.modifier){
+            Intent ModifierActivityIntent = new Intent(AfficherFilmActivity.this, ModifierFilmActivity.class);
+            ModifierActivityIntent.putExtra("idFilm",getIntent().getIntExtra("id", 0));
+            startActivity( ModifierActivityIntent);
+        }
         return true;
     }
 

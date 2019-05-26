@@ -67,6 +67,17 @@ public class FilmController {
                 .toUri();
         return ResponseEntity.created(location).build();
     }
+    @PostMapping(value = "/Film/{id}")
+    public ResponseEntity<Void> modifierFilm(@Valid @RequestBody Film film){
+        Film film1 = filmDAO.save(film);
+        if(film1!=null){return ResponseEntity.noContent().build();}
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(film1.getId())
+                .toUri();
+        return ResponseEntity.created(location).build();
+    }
     // Supprimer un film de la BD
     @DeleteMapping (value = "/Film/{id}")
     public void supprimerFilm(@PathVariable int id) {

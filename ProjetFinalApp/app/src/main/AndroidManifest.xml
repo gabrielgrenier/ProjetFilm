@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".controller.AjouterFilmActivity"></activity>
+        <activity android:name=".controller.ModifierFilmActivity"></activity>
         <activity android:name=".controller.AfficherFilmActivity" />
         <activity android:name=".controller.ApiActivity" />
         <activity android:name=".controller.MainActivity">
