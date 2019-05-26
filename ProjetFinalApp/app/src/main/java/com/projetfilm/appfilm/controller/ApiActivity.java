@@ -34,13 +34,6 @@ public class ApiActivity extends AppCompatActivity implements FilmCalls.Callback
 
     }
     @Override
-    public void onResume(){
-        super.onResume();
-        setContentView(R.layout.activity_api);
-        FilmCalls.fetchFilms(this, getIntent().getStringExtra("id"));
-
-    }
-    @Override
     public void onRestart() {
         super.onRestart();
         setContentView(R.layout.activity_api);

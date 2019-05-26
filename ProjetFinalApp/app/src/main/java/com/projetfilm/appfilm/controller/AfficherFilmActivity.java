@@ -1,8 +1,10 @@
 package com.projetfilm.appfilm.controller;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,7 +38,14 @@ public class AfficherFilmActivity extends AppCompatActivity implements FilmCalls
         getMenuInflater().inflate(R.menu.film_menu, menu);
         return true;
     }
-
+    public boolean onOptionsItemSelected(MenuItem item){
+        int  id =  item.getItemId();
+        if (id==R.id.supprimer){
+            FilmCalls.supprimerFilm(getIntent().getIntExtra("id", 0));
+            finish();
+        }
+        return true;
+    }
     @Override
     public void onResponse(@Nullable Film film) {
         titreFilm.setText(film.getTitre());
