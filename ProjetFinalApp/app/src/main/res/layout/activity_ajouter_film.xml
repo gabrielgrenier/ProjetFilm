@@ -15,72 +15,85 @@
         android:layout_height="63dp"
         android:text="Ajouter un film"
         android:textSize="24sp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textStyle="bold"
+        style="@style/FilmText.Title"/>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Titre:" />
+        android:text="Titre:"
+        style="@style/FilmText.row"/>
 
     <EditText
         android:id="@+id/titre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        style="@style/Filmedit"/>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Date de sortie: (yyyy-MM--dd)" />
+        android:text="Date de sortie: (yyyy-MM--dd)"
+        style="@style/FilmText.row"/>
 
     <EditText
         android:id="@+id/dateSortie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        style="@style/Filmedit"
+        />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Prix:" />
+        android:text="Prix:"
+        style="@style/FilmText.row"/>
 
     <EditText
         android:id="@+id/prix"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        style="@style/Filmedit"/>
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lien de l'image:" />
+        android:text="Lien de l'image:"
+        style="@style/FilmText.row"/>
 
     <EditText
         android:id="@+id/lien"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        style="@style/Filmedit"/>
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Description:" />
+        android:text="Description:"
+        style="@style/FilmText.row"/>
 
     <EditText
         android:id="@+id/desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        style="@style/Filmedit"/>
 
     <Button
         android:id="@+id/buttonAjouter"
@@ -90,5 +103,6 @@
         android:layout_marginEnd="20dp"
         android:layout_margin="20dp"
         android:textSize="16sp"
-        android:text="Ajouter" />
+        android:text="Ajouter"
+        style="@style/FilmButton"/>
 </LinearLayout>

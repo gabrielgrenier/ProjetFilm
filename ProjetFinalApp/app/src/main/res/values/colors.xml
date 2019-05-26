@@ -5,13 +5,15 @@
     <color name="colorAccent">#3346CE</color>
 
     <!--  Fond -->
-    <color name="fond_light">#444242</color>
+    <color name="fond_light">#535252</color>
     <color name="fond_lightdark">#3D3C3C</color>
     <color name="fond_dark">#2B2929</color>
 
     <!-- Textview-->
     <color name="text_normal_blue">#2C4FCE</color>
     <color name="text_normal">#CFCFCF</color>
+    <color name="text_orange">#E66337</color>
+    <color name="text_vert">#1A7904</color>
 
     <!-- Button -->
     <color name="button_fav">#E91E63</color>

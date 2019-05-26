@@ -18,7 +18,7 @@
         android:gravity="center"
         android:text="Fournisseur de film"
         android:textStyle="bold"
-        style="@style/FilmText.Title"></TextView>
+        style="@style/FilmText.Title"/>
 
     <Button
         android:id="@+id/activity_main_Marvel_btn"

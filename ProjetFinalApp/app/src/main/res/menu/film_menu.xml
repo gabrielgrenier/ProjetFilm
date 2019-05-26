@@ -4,9 +4,9 @@
 
     <item android:id="@+id/modifier"
         android:title="@string/modifier"
-        app:showAsAction="never"/>
+        app:showAsAction="never" />
     <item android:id="@+id/supprimer"
         android:title="@string/supprimer"
-        app:showAsAction="never"/>
+        app:showAsAction="never" />
 
 </menu>

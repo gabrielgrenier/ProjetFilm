@@ -3,14 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
     android:orientation="vertical"
+    style="@style/FilmApi"
+    android:layout_height="wrap_content"
     tools:context=".controller.ApiActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/RecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:clipToPadding="false">
 
     </android.support.v7.widget.RecyclerView>

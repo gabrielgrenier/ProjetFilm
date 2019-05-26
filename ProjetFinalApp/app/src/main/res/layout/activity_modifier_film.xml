@@ -4,95 +4,96 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginStart="10dp"
-    android:layout_marginEnd="10dp"
     tools:context=".controller.ModifierFilmActivity">
-
-    <TextView
-        android:id="@+id/textViewTitreApp"
-        android:layout_width="match_parent"
-        android:layout_height="63dp"
-        android:text="Ajouter un film"
-        android:textSize="24sp"
-        android:gravity="center"/>
-
     <TextView
         android:id="@+id/textviewNum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Numero:" />
+        android:text="Numero:"
+        style="@style/FilmText.row"/>
 
     <EditText
         android:id="@+id/id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        style="@style/Filmedit"/>
 
     <TextView
         android:id="@+id/textViewTitre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Titre:" />
+        android:text="Titre:"
+        style="@style/FilmText.row"/>
 
     <EditText
         android:id="@+id/titre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        style="@style/Filmedit"/>
 
     <TextView
         android:id="@+id/textViewDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Date de sortie:" />
+        android:text="Date de sortie:"
+        style="@style/FilmText.row"/>
 
     <EditText
         android:id="@+id/dateSortie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        style="@style/Filmedit"/>
 
     <TextView
         android:id="@+id/textViewPrix"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Prix:" />
+        android:text="Prix:"
+        style="@style/FilmText.row"/>
 
     <EditText
         android:id="@+id/prix"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        style="@style/Filmedit"/>
 
     <TextView
         android:id="@+id/textViewURL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lien de l'image:" />
+        android:text="Lien de l'image:"
+        style="@style/FilmText.row"/>
 
     <EditText
         android:id="@+id/lien"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        style="@style/Filmedit"/>
 
     <TextView
         android:id="@+id/textViewDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Description:" />
+        android:text="Description:"
+        style="@style/FilmText.row"/>
 
     <EditText
         android:id="@+id/desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        style="@style/Filmedit"/>
 
     <Button
         android:id="@+id/buttonModifier"
@@ -102,5 +103,6 @@
         android:layout_marginEnd="20dp"
         android:layout_margin="20dp"
         android:textSize="16sp"
-        android:text="Modifier" />
+        android:text="Modifier"
+        style="@style/FilmButton"/>
 </LinearLayout>

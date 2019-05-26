@@ -13,20 +13,42 @@
     <style name="Film.Home">
         <item name="android:windowBackground">@color/fond_light</item>
     </style>
+    <style name="Filmmenu">
+        <item name="android:windowBackground">@color/fond_lightdark</item>
+        <item name="android:textColor">@color/text_vert</item>
+    </style>
+    <style name="Filmrow">
+        <item name="android:windowBackground">@color/fond_dark</item>
+    </style>
 
     <style name="Film.List">
         <item name="android:windowBackground">@color/fond_dark</item>
     </style>
-
+    <style name="Filmimage">
+        <item name="android:layout_marginLeft">@dimen/marginImg</item>
+        <item name="android:layout_marginRight">@dimen/marginImg</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_marginBottom">@dimen/margin_md</item>
+    </style>
     <!-- | STYLES | -->
-
+    <style name="FilmApi">
+        <item name="android:background">@color/fond_light</item>
+    </style>
+    <style name="Filmedit">
+        <item name="android:textColor">@color/text_orange</item>
+    </style>
     <!-- TEXT VIEW -->
     <style name="FilmText" parent="@style/TextAppearance.AppCompat">
         <item name="android:padding">@dimen/padding_normal</item>
         <item name="android:textColor">@color/text_normal_blue</item>
     </style>
 
+    <style name="FilmText.row">
+        <item name="android:textColor">@color/text_normal</item>
+        <item name="android:textSize">@dimen/text_row</item>
+    </style>
     <style name="FilmText.Title">
+        <item name="android:textColor">@color/text_normal_blue</item>
         <item name="android:textSize">@dimen/text_title</item>
     </style>
 
@@ -40,4 +62,5 @@
         <item name="android:layout_marginBottom">@dimen/margin_small</item>
     </style>
 
+    <!---->
 </resources>
