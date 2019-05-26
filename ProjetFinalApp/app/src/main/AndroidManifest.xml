@@ -10,6 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/Film">
         <activity android:name=".controller.AjouterFilmActivity">
 
@@ -23,6 +24,14 @@
         <activity
             android:name=".controller.MainActivity"
             android:theme="@style/Film.List">
+=======
+        android:theme="@style/AppTheme">
+        <activity android:name=".controller.AjouterFilmActivity"></activity>
+        <activity android:name=".controller.ModifierFilmActivity"></activity>
+        <activity android:name=".controller.AfficherFilmActivity" />
+        <activity android:name=".controller.ApiActivity" />
+        <activity android:name=".controller.MainActivity">
+>>>>>>> 5ba901445b9383f17dc19a90ccceba23cb9b40d5
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
