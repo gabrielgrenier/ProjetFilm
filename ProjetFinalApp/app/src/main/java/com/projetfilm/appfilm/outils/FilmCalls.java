@@ -94,7 +94,6 @@ public class FilmCalls {
                 .baseUrl("http://10.0.2.2:"+apiInUse.getPort())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-
         GetData filmServices = retrofit.create(GetData.class);
 
         Call<Film> call = filmServices.ajouterFilm(bodyFilm,lien);
@@ -131,9 +130,40 @@ public class FilmCalls {
 
             @Override
             public void onFailure(Call<Film> call, Throwable t) {
+
             }
         });
     }
+
+
+    public static void modifierFilm(Film film) {
+        String lien;
+        boolean reponse;
+
+        lien = setLien(apiInUse.getName(), "Film", film.getId() + "");
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://10.0.2.2:" + apiInUse.getPort())
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        GetData filmServices = retrofit.create(GetData.class);
+
+
+        Call<Film> call = filmServices.modifierFilm(film, lien);
+
+        call.enqueue(new Callback<Film>() {
+            @Override
+            public void onResponse(Call<Film> call, Response<Film> response) {
+            }
+
+            @Override
+            public void onFailure(Call<Film> call, Throwable t) {
+
+            }
+        });
+    }
+
     private static int setPort(String api){
         int port = 0;
         switch(api){
@@ -152,7 +182,7 @@ public class FilmCalls {
         }
         return port;
     }
-    private static String setLien(String api,String action,String id){
+    public static String setLien(String api,String action,String id){
         String lien;
         switch(api){
             case "Paramount" :
