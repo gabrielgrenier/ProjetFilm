@@ -86,40 +86,62 @@ public class FilmCalls {
             }
         });
     }
-
-    public static void modifierFilm(final CallbackFilm callback,Film film){
+    public static void ajouterFilm(BodyFilm bodyFilm) {
         String lien;
-        final WeakReference<CallbackFilm> callbackWeakReference = new WeakReference<CallbackFilm>(callback);
+        boolean reponse;
+        lien = setLien(apiInUse.getName(),"Film",null);
 
-        lien = setLien(apiInUse.getName(),"Film",film.getId()+"");
+        final Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://10.0.2.2:"+apiInUse.getPort())
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        GetData filmServices = retrofit.create(GetData.class);
+
+        Call<Film> call = filmServices.ajouterFilm(bodyFilm);
+
+        call.enqueue(new Callback<Film>() {
+            @Override
+            public void onResponse(Call<Film> call, Response<Film> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<Film> call, Throwable t) {
+
+            }
+        });
+    }
+
+
+    public static void modifierFilm(Film film) {
+        String lien;
+        boolean reponse;
+
+        lien = setLien(apiInUse.getName(), "Film", film.getId() + "");
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:"+apiInUse.getPort())
+                .baseUrl("http://10.0.2.2:" + apiInUse.getPort())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
         GetData filmServices = retrofit.create(GetData.class);
 
-        Call<Film> call = filmServices.modifierFilm(film,lien);
+
+        Call<Film> call = filmServices.modifierFilm(film, lien);
 
         call.enqueue(new Callback<Film>() {
             @Override
             public void onResponse(Call<Film> call, Response<Film> response) {
-                if(response.isSuccessful()) {
-                    if(callbackWeakReference.get()!=null) callbackWeakReference.get().onResponse(response.body());
-                }
             }
 
             @Override
             public void onFailure(Call<Film> call, Throwable t) {
-                if(callbackWeakReference.get()!=null) callbackWeakReference.get().onFailure();
+
             }
         });
-
-
     }
 
-    public static int setPort(String api){
+    private static int setPort(String api){
         int port = 0;
         switch(api){
             case "Marvel" :

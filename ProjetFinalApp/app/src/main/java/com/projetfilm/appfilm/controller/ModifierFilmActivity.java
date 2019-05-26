@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.projetfilm.appfilm.R;
 import com.projetfilm.appfilm.model.Film;
+import com.projetfilm.appfilm.outils.BodyFilm;
 import com.projetfilm.appfilm.outils.FilmCalls;
 import com.squareup.picasso.Picasso;
 
@@ -30,6 +31,7 @@ public class ModifierFilmActivity extends AppCompatActivity implements FilmCalls
     private EditText description;
     private Button bn_modifier;
     private Film film;
+    private String date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,15 +53,24 @@ public class ModifierFilmActivity extends AppCompatActivity implements FilmCalls
         bn_modifier.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(lienImage.getText().toString().equals("")){
+                    film.setLienImage("https://www.classicposters.com/images/nopicture.gif");
+                }
+                else{
+                    film.setLienImage(lienImage.getText().toString());
+                }
                 film.setTitre(titre.getText().toString());
-                film.setDateSortie(stringToDate(dateSortie.getText().toString()));
+                film.setDateSortie(stringToJsonStandard(dateSortie.getText().toString()));
                 film.setPrixVisionnement(Double.parseDouble(prix.getText().toString()));
-                film.setLienImage(lienImage.getText().toString());
                 film.setDescription(description.getText().toString());
-                FilmCalls.modifierFilm(ModifierFilmActivity.this,film);
+                Toast.makeText(ModifierFilmActivity.this, stringToJsonStandard(dateSortie.getText().toString()).toString(), Toast.LENGTH_SHORT).show();
+
+
+                /*FilmCalls.modifierFilm(film);
+
                 Intent AfficherFilmActivityIntent = new Intent(ModifierFilmActivity.this, AfficherFilmActivity.class);
                 AfficherFilmActivityIntent.putExtra("id",film.getId());
-                startActivity(AfficherFilmActivityIntent);
+                startActivity(AfficherFilmActivityIntent);*/
             }
         });
 
@@ -87,17 +98,21 @@ public class ModifierFilmActivity extends AppCompatActivity implements FilmCalls
     //----- Conversion pour les dates
 
     public String dateToSring(Date date){
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
         String strDate= formatter.format(date);
         return strDate;
     }
-    public Date stringToDate(String dateString){
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+    public Date stringToJsonStandard(String dateString){
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
         try {
             date = formatter.parse(dateString);
+
         }
-        catch (ParseException e){Toast.makeText(ModifierFilmActivity.this, e+"", Toast.LENGTH_SHORT).show();}
+        catch (ParseException e) {
+            e.printStackTrace();
+        }
+
         return date;
 
     }

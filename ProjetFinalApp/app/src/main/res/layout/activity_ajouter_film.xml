@@ -18,19 +18,6 @@
         android:gravity="center"/>
 
     <TextView
-        android:id="@+id/textview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Numero:" />
-
-    <EditText
-        android:id="@+id/id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-    <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,7 +34,7 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Date de sortie:" />
+        android:text="Date de sortie: (yyyy-MM--dd)" />
 
     <EditText
         android:id="@+id/dateSortie"

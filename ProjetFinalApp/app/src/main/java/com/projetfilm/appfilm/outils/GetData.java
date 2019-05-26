@@ -16,8 +16,8 @@ public interface GetData {
     Call<List<Film>> getFilms(@Url String url);
     @GET
     Call<Film> getFilm(@Url String url);
-    @POST
-    Call<Film> ajouterFilm(@Body Film film, @Url String url);
     @PUT
     Call<Film> modifierFilm(@Body Film film, @Url String url);
+    @POST("/Film")
+    Call<Film> ajouterFilm(@Body BodyFilm bodyFilm);
 }
