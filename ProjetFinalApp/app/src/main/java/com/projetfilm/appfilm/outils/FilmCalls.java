@@ -136,11 +136,11 @@ public class FilmCalls {
     }
 
 
-    public static void modifierFilm(Film film) {
+    public static void modifierFilm(BodyFilm bodyFilm) {
         String lien;
         boolean reponse;
 
-        lien = setLien(apiInUse.getName(), "Film", film.getId() + "");
+        lien = setLien(apiInUse.getName(), "Film", bodyFilm.getId() + "");
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://10.0.2.2:" + apiInUse.getPort())
@@ -150,7 +150,7 @@ public class FilmCalls {
         GetData filmServices = retrofit.create(GetData.class);
 
 
-        Call<Film> call = filmServices.modifierFilm(film, lien);
+        Call<Film> call = filmServices.modifierFilm(bodyFilm, lien);
 
         call.enqueue(new Callback<Film>() {
             @Override

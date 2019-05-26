@@ -32,6 +32,8 @@ public class ModifierFilmActivity extends AppCompatActivity implements FilmCalls
     private Button bn_modifier;
     private Film film;
     private String date;
+    private BodyFilm bodyFilm;
+    private String chemin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,23 +56,25 @@ public class ModifierFilmActivity extends AppCompatActivity implements FilmCalls
             @Override
             public void onClick(View view) {
                 if(lienImage.getText().toString().equals("")){
-                    film.setLienImage("https://www.classicposters.com/images/nopicture.gif");
+                    chemin = "https://www.classicposters.com/images/nopicture.gif";
                 }
                 else{
-                    film.setLienImage(lienImage.getText().toString());
+                    chemin = lienImage.getText().toString();
                 }
-                film.setTitre(titre.getText().toString());
-                film.setDateSortie(stringToJsonStandard(dateSortie.getText().toString()));
-                film.setPrixVisionnement(Double.parseDouble(prix.getText().toString()));
-                film.setDescription(description.getText().toString());
-                Toast.makeText(ModifierFilmActivity.this, stringToJsonStandard(dateSortie.getText().toString()).toString(), Toast.LENGTH_SHORT).show();
+                bodyFilm = new BodyFilm(
+                        film.getId(),
+                        titre.getText().toString(),
+                        dateSortie.getText().toString(),
+                        Double.valueOf(prix.getText().toString()),
+                        chemin,
+                        description.getText().toString());
 
 
-                /*FilmCalls.modifierFilm(film);
+                FilmCalls.modifierFilm(bodyFilm);
 
                 Intent AfficherFilmActivityIntent = new Intent(ModifierFilmActivity.this, AfficherFilmActivity.class);
                 AfficherFilmActivityIntent.putExtra("id",film.getId());
-                startActivity(AfficherFilmActivityIntent);*/
+                startActivity(AfficherFilmActivityIntent);
             }
         });
 
@@ -101,20 +105,6 @@ public class ModifierFilmActivity extends AppCompatActivity implements FilmCalls
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
         String strDate= formatter.format(date);
         return strDate;
-    }
-    public Date stringToJsonStandard(String dateString){
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = new Date();
-        try {
-            date = formatter.parse(dateString);
-
-        }
-        catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        return date;
-
     }
 
 }
