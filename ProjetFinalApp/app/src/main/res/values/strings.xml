@@ -3,4 +3,7 @@
     <string name="app_name">Catalogue de film</string>
     <string name="modifier">Modifier</string>
     <string name="supprimer">Supprimer</string>
+
+    <!-- ANIMATION -->
+    <string name="animation_api_to_film" translatable="false">AnimationApiToFilm</string>
 </resources>

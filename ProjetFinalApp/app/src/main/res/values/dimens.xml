@@ -4,5 +4,8 @@
     <dimen name="text_button">24sp</dimen>
     <dimen name="padding_normal">8dip</dimen>
     <dimen name="margin_small">8dip</dimen>
+    <dimen name="margin_md">20dip</dimen>
     <dimen name="margin_huge">15dip</dimen>
+    <dimen name="marginImg">30dip</dimen>
+    <dimen name="text_row">16sp</dimen>
 </resources>
