@@ -38,7 +38,14 @@ public class AfficherFilmActivity extends AppCompatActivity implements FilmCalls
         getMenuInflater().inflate(R.menu.film_menu, menu);
         return true;
     }
-
+    public boolean onOptionsItemSelected(MenuItem item){
+        int  id =  item.getItemId();
+        if (id==R.id.supprimer){
+            FilmCalls.supprimerFilm(getIntent().getIntExtra("id", 0));
+            finish();
+        }
+        return true;
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         int  id =  item.getItemId();
