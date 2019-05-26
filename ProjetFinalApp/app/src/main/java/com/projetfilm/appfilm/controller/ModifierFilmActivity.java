@@ -72,9 +72,7 @@ public class ModifierFilmActivity extends AppCompatActivity implements FilmCalls
 
                 FilmCalls.modifierFilm(bodyFilm);
 
-                Intent AfficherFilmActivityIntent = new Intent(ModifierFilmActivity.this, AfficherFilmActivity.class);
-                AfficherFilmActivityIntent.putExtra("id",film.getId());
-                startActivity(AfficherFilmActivityIntent);
+                finish();
             }
         });
 
