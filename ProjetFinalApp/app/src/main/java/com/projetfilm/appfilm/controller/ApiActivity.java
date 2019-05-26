@@ -33,7 +33,19 @@ public class ApiActivity extends AppCompatActivity implements FilmCalls.Callback
         FilmCalls.fetchFilms(this, getIntent().getStringExtra("id"));
 
     }
+    @Override
+    public void onResume(){
+        super.onResume();
+        setContentView(R.layout.activity_api);
+        FilmCalls.fetchFilms(this, getIntent().getStringExtra("id"));
 
+    }
+    @Override
+    public void onRestart() {
+        super.onRestart();
+        setContentView(R.layout.activity_api);
+        FilmCalls.fetchFilms(this, getIntent().getStringExtra("id"));
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.ajouter_menu, menu);
