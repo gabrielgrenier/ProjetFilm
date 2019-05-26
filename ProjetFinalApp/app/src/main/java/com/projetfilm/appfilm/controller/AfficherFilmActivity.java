@@ -34,6 +34,16 @@ public class AfficherFilmActivity extends AppCompatActivity implements FilmCalls
     }
 
     @Override
+    public void onRestart() {
+        super.onRestart();
+        setContentView(R.layout.activity_afficher_film);
+
+        FilmCalls.fetchFilm(this, getIntent().getIntExtra("id", 0));
+        titreFilm = (TextView) findViewById(R.id.titreFilm);
+        posterFilm = (ImageView) findViewById(R.id.posterFilm);
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.film_menu, menu);
         return true;
