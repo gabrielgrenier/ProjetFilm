@@ -68,7 +68,7 @@ public class FilmController {
         return ResponseEntity.created(location).build();
     }
     @PutMapping(value = "/Film/{id}")
-    public ResponseEntity<Void> modifierFilm(@Valid @RequestBody Film film, int id){
+    public ResponseEntity<Void> modifierFilm(@Valid @RequestBody Film film){
         Film film1 = filmDAO.save(film);
         if(film1!=null){return ResponseEntity.noContent().build();}
         URI location = ServletUriComponentsBuilder

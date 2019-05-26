@@ -44,11 +44,6 @@ public class AfficherFilmActivity extends AppCompatActivity implements FilmCalls
             FilmCalls.supprimerFilm(getIntent().getIntExtra("id", 0));
             finish();
         }
-        return true;
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        int  id =  item.getItemId();
         if (id==R.id.modifier){
             Intent ModifierActivityIntent = new Intent(AfficherFilmActivity.this, ModifierFilmActivity.class);
             ModifierActivityIntent.putExtra("idFilm",getIntent().getIntExtra("id", 0));
